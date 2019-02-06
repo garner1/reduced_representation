@@ -3,7 +3,7 @@
 enzyme=$1			# NlaIII or HindIII or ...
 ref=$2				# full path to reference
 
-# ./exome-digestion.py ${enzyme} ${ref} human
+./exome-digestion.py ${enzyme} ${ref}
 
 cd /home/garner1/Work/pipelines/data/agilent
 
