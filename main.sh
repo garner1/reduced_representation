@@ -2,10 +2,11 @@
 
 enzyme=$1			# NlaIII or HindIII or ...
 ref=$2				# full path to reference
+datadir=$3			# full path to dir containing the ref genome
 
 ./exome-digestion.py ${enzyme} ${ref}
 
-cd /home/garner1/Work/pipelines/data/agilent
+cd $datadir
 
 cat S07604715_Padded_${enzyme}.txt |
     tr ':-' '\t\t' |
